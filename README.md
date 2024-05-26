@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Nubra
 
 An Options Trading Platform
@@ -92,3 +93,6 @@ Step-by-step guide to get a development environment running:
   - tailwind.config.ts
   - tsconfig.json
   - vercel.json
+=======
+# BHIVE
+>>>>>>> d2eb62d70a2de2ba554123b1629bcee8b9c02dcf
