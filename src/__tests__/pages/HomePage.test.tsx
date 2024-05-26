@@ -6,7 +6,7 @@
 //   it('renders the Components', () => {
 //     render(<HomePage />);
 
-//     const heading = screen.getByText(/Nubra - Trading/i, { exact: false });
+//     const heading = screen.getByText(/bhive - Trading/i, { exact: false });
 
 //     expect(heading).toBeInTheDocument();
 //   });
