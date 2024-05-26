@@ -4,7 +4,7 @@ import React from "react";
 
 import "@/styles/globals.css";
 
-import DefaultLayout from "@/components/layouts/DefaultLayout";
+import DefaultLayout from "../components/layouts/DefaultLayout";
 
 import { inter, poppins } from "@/app/fonts";
 import { siteConfig } from "@/constants/config";
