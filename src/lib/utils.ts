@@ -1,6 +1,6 @@
-import { type ClassValue, clsx } from 'clsx';
+import { type ClassValue, clsx } from "clsx";
 
-import { customTwMerge } from '../../customTwMerge';
+import { customTwMerge } from "../../customTwMerge";
 
 export function cn(...inputs: ClassValue[]) {
   return customTwMerge(clsx(inputs));

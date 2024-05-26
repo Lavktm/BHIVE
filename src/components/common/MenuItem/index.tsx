@@ -1,24 +1,14 @@
-import clsx from 'clsx';
-import Link from 'next/link';
-import React from 'react';
+import clsx from "clsx";
+import Link from "next/link";
+import React from "react";
 
 type MenuItem = {
-
   label: string;
   Icon: React.ElementType;
-  className?: string
-
+  className?: string;
 };
 
-
-
-const MenuItem = ({
-  label,
-  Icon,
-  className
-}: MenuItem): JSX.Element => {
-
-
+const MenuItem = ({ label, Icon, className }: MenuItem): JSX.Element => {
   return (
     <div
       className={clsx(
@@ -26,19 +16,16 @@ const MenuItem = ({
         className,
       )}
     >
-      <span className='inline-block'>
-        <Icon
-          className='h-6 w-6'
-        />
+      <span className="inline-block">
+        <Icon className="h-6 w-6" />
       </span>
       <span
         className={clsx(
-          'whitespace-nowrap transition duration-300 ease-in-out',
+          "whitespace-nowrap transition duration-300 ease-in-out",
         )}
       >
         {label}
       </span>
-
     </div>
   );
 };

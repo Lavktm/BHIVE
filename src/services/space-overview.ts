@@ -1,9 +1,7 @@
-import axios from 'axios';
+import axios from "axios";
 
-
-import { siteConfig } from '@/constants/config';
-import { ISpaceOverview } from '@/interfaces/common';
-
+import { siteConfig } from "@/constants/config";
+import { ISpaceOverview } from "@/interfaces/common";
 
 interface IfetchSpaceOverviewDataResponse {
   data: ISpaceOverview | Record<string, never>;
@@ -12,10 +10,7 @@ interface IfetchSpaceOverviewDataResponse {
   error: Error | null;
 }
 
-
-export async function fetchSpaceOverViewData(
-
-): Promise<IfetchSpaceOverviewDataResponse> {
+export async function fetchSpaceOverViewData(): Promise<IfetchSpaceOverviewDataResponse> {
   try {
     const response = await axios.get(`${siteConfig.appApiUrl}/space-overview`);
     return {
@@ -32,9 +27,4 @@ export async function fetchSpaceOverViewData(
       error: error,
     };
   }
-
 }
-
-
-
-

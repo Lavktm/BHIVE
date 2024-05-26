@@ -1,4 +1,4 @@
-import { extendTailwindMerge } from 'tailwind-merge';
+import { extendTailwindMerge } from "tailwind-merge";
 
 export const customTwMerge = extendTailwindMerge({
   // ↓ Override elements from the default config
@@ -11,7 +11,7 @@ export const customTwMerge = extendTailwindMerge({
     // },
     // ↓ Add values to existing class groups or define new ones
     classGroups: {
-      'font-size': ['text-xxs', 'text-xsm'],
+      "font-size": ["text-xxs", "text-xsm"],
     },
     // ↓ Here you can define additional conflicts across class groups
   },

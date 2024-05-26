@@ -1,7 +1,5 @@
-import HomeSections from '@/components/home-page-component';
+import HomeSections from "@/components/home-page-component";
 
 export default function HomePage() {
-  return (
-    <HomeSections />
-  );
+  return <HomeSections />;
 }

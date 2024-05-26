@@ -1,6 +1,4 @@
-import { AxiosError } from 'axios';
-
-
+import { AxiosError } from "axios";
 
 export interface ISelectItem {
   key: string;
@@ -11,8 +9,6 @@ export interface IError {
   isError: boolean;
   error: AxiosError | Error;
 }
-
-
 
 export interface ISpaceOverviewCard {
   id: string;
@@ -44,8 +40,7 @@ export interface ISpaceOverviewCard {
   };
   manager_id?: string | null;
   can_edit?: boolean;
-  type: string,
-
+  type: string;
 }
 
 export interface ISpaceOverview {

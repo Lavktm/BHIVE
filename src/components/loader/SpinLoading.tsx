@@ -17,22 +17,22 @@
 </svg>; */
 }
 
-import clsx from 'clsx';
-import React from 'react';
+import clsx from "clsx";
+import React from "react";
 
-import { cn } from '@/lib/utils';
+import { cn } from "@/lib/utils";
 
-import ISpinLoader from '~/svg/spin-loader.svg';
+import ISpinLoader from "~/svg/spin-loader.svg";
 
 const SpinLoading = ({
-  className = '',
+  className = "",
 }: {
   className?: string;
 }): JSX.Element => {
   return (
     <ISpinLoader
       className={cn(
-        clsx('h-6 w-6 animate-spin fill-black text-white', className),
+        clsx("h-6 w-6 animate-spin fill-black text-white", className),
       )}
     />
   );
