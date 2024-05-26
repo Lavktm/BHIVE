@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .scroll-indicator::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  .scroll-indicator::-webkit-scrollbar:vertical {
+    @apply w-1.5;
+  }
+
+  .scroll-indicator::-webkit-scrollbar-thumb {
+    @apply rounded-lg bg-primary-blue;
+  }
+
+  .scroll-indicator::-webkit-scrollbar-track {
+    @apply rounded-lg bg-mercury;
+  }
+}
+
+.font-poppins-medium {
+  @apply font-poppins font-medium;
+}
+
+.font-poppins-bold {
+  @apply font-poppins font-bold;
+}
+
+:root {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+/* @media screen and (max-width: 320px) {
+  html {
+    font-size: 12px;
+  }
+} */
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 1280px) {
+  html {
+    font-size: 11.5px;
+  }
+}
+
+/* @media screen and (min-width: 641px) and (max-width: 1023px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  html {
+    font-size: 12px;
+  }
+} */
+
+@media screen and (min-width: 1281px) and (max-width: 1511px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+
+.disable-btn {
+  @apply disabled:cursor-not-allowed disabled:opacity-50;
+}
